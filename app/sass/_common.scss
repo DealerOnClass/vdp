@@ -1,0 +1,392 @@
+@import "/assets/fonts/proxima/fonts.css";
+/*------------------------------------*
+	TABLE OF CONTENT - $ search prefix
+
+	FONT_FAMILY
+	FONT_COLOR
+	FONT_SIZE
+	BACKGROUND COLORS
+	ANCHOR
+	LIST GROUP
+	PANEL
+	WELL
+	TABLE
+	TABS
+	NAV RESET
+	NAVTABS
+	NAV-INVERSE
+	FORM CONTROL
+	PAGINATION
+	BTN
+	BTN_CTA
+	BTN_MAIN
+	BTN_ALT1
+	BTN_ALT2
+	BTN_ALT3
+	BTN_NAV1 AND BTN_NAV2
+	HOME_MISC
+	HOME_QUICK-NAV
+	HOME_INVENTORY SEARCH BUTTONS
+	WIDGET_INVENTORY SEARCH
+	WIDGET_BANNER
+	WIDGET_MODELBAR
+	WIDGET_FEATURED VEHICLES SCROLLER
+	FIXED_HEADER
+	SRP/VDP
+
+	cta				fa6900 
+	cta hover		f2761c
+	main			003f7a
+	main hover		053561
+	
+	alt (lite blue)	38a6e1
+	alt hover		369ed6
+	
+	med grey		9a9a9a
+
+/*------------------------------------*
+	$FONT_FAMILY
+\*------------------------------------*/
+body { font-family: Arial, Helvetica, sans-serif; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, nav { font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif; }
+/*------------------------------------*
+	$FONT_COLOR
+\*------------------------------------*/
+hr { border-top-color: #ddd; }
+.text-default { color: #333; }
+.text-white { color: #fff; }
+.text-main { color: #003f7a; }
+.text-cta { color: #fa6900; }
+.text-alt { color: #38a6e1; }
+
+/*------------------------------------*
+	$FONT_SIZE
+
+	Headers scale based on body
+	font-size. Bootstrap default body
+	font size is 14px.
+\*------------------------------------*/
+
+@media (max-width:991px) {
+body, .btn, .dropdown-menu, .form-control { font-size: 13px; }
+}
+/*------------------------------------*
+	$BACKGROUND COLORS
+\*------------------------------------*/
+.headerWrapper { /*	-moz-box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);*/ }
+.contentSectionO { background-color: #f3f3f3; }
+.bannerWrapper { background-color: #fff; }
+.contentSection1 { }
+.bg-main {
+	background-color: #003f7a;
+	border: 1px solid transparent;
+	color: #fff;
+}
+.bg-cta {
+	background-color: #fa6900;
+	border: 1px solid transparent;
+}
+.bg-alt, .bg-alt1, .panel-heading.bg-alt {
+	background-color: #38a6e1;
+	border: 1px solid transparent;
+	color: #fff;
+}
+.offerBlock {
+	background-color: #003f7a;
+	color: #fff;
+}
+footer { background-color: #f3f3f3; }
+
+@media (max-width:767px) {
+.snap-content { background-color: #fff !important; }
+}
+
+/*------------------------------------*
+	$LAYOUT
+\*------------------------------------*/
+@media (min-width:768px) and (max-width:991px) {
+.contentTop { padding: .5em 0; }
+}
+/*------------------------------------*
+	$ANCHOR
+\*------------------------------------*/
+a { color: #003f7a; }
+a:hover, .btn:hover, .btn:active, .btn:focus { color: #053561; }
+/*------------------------------------*
+	$LIST GROUP
+\*------------------------------------*/
+.list-group-item { }
+a.list-group-item { }
+a.list-group-item:hover, a.list-group-item:focus { }
+/*------------------------------------*
+	$PANEL
+\*------------------------------------*/
+.panel, .panel-heading, .panel-footer { border-radius: 0; }
+.panel { box-shadow: none; }
+.panel-title { font-weight: bold; }
+.panel-default .panel-heading { }
+.panel-default .panel-footer { }
+.panel-default .panel-heading + .panel-collapse .panel-body { }
+/*------------------------------------*
+	$WELL
+\*------------------------------------*/
+.well {
+	box-shadow: none;
+	border-radius: 0;
+}
+/*------------------------------------*
+	$TABLE
+\*------------------------------------*/
+.table thead tr th { }
+.table thead tr th, .table tbody tr th, .table tfoot tr th, .table thead tr d, .table tbody tr td, .table tfoot tr td { }
+/*------------------------------------*
+	$TABS
+\*------------------------------------*/
+.nav-tabs.nav-justified > li > a, .nav-tabs > li > a { background-color: #eee; }
+.nav-tabs.nav-justified > .active > a { border-bottom-color: transparent; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { background-color: #fff; }
+/* tabs inside well */
+.well .nav-tabs.nav-justified > .active > a { background-color: #f5f5f5; }
+.well .panel .nav-tabs.nav-justified > .active > a { background-color: #fff; }
+/*------------------------------------*
+	$NAVTABS
+\*------------------------------------*/
+.nav-pills li.active a, .nav-pills li.active a:hover, .nav-pills li.active a:focus {
+	background-color: #003f7a;
+	border-color: transparent;
+	color: #fff;
+}
+/*------------------------------------*
+	$FORM CONTROL
+\*------------------------------------*/
+
+.input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { border-radius: 0; }
+/*------------------------------------*
+	$NAV-INVERSE
+\*------------------------------------*/
+.navbar-inverse { }
+/*------------------------------------*
+	$PAGINATION
+\*------------------------------------*/
+.pagination { }
+.pagination li a, .pagination li span { }
+.pagination .active a, .pagination .active span, .pagination .active a:hover, .pagination .active span:hover, .pagination .active a:focus, .pagination .active span:focus {
+	background-color: #cccccc;
+	border-color: transparent;
+	color: #fff;
+}
+/*------------------------------------*
+	$BTN
+\*------------------------------------*/
+
+/*------------------------------------*
+	$BTN_CTA
+\*------------------------------------*/
+.btn-cta {
+	color: #fff;
+	background: #fa6900;
+	border-color: #fa6900;
+}
+.btn-cta:hover, .btn-cta:focus, .btn-cta:active, .btn-cta.active, .open > .dropdown-toggle.btn-cta {
+	color: #fff;
+	background: #f2761c;
+	border-color: #f2761c;
+}
+/*------------------------------------*
+	$BTN_MAIN
+\*------------------------------------*/
+.btn-main, .btn-alt3.active /* used on specials pages as tabs */ {
+	color: #fff;
+	background-color: #003f7a;
+	border-color: #003f7a;
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active, .btn-main.active, .open .dropdown-toggle.btn-main {
+	color: #fff;
+	background-color: #053561;
+	border-color: #053561;
+}
+/*------------------------------------*
+	$BTN_ALT1
+\*------------------------------------*/
+.btn-alt1 {
+	color: #000;
+	background-color: #fff;
+	border-color: #ddd;
+}
+.btn-alt1:hover, .btn-alt1:focus, .btn-alt1:active, .btn-alt1.active, .open .dropdown-toggle.btn-alt1, .nav .btn-alt1:hover, .nav .btn-alt1:focus, .nav .btn-alt1:active, .nav .btn-alt1.active {
+	color: #000;
+	background-color: #eee;
+	border-color: #ccc;
+}
+/*------------------------------------*
+	$BTN_ALT2
+\*------------------------------------*/
+.btn-alt2 {
+	color: #000;
+	background-color: #ddd;
+	border-color: #ccc;
+}
+.btn-alt2:hover, .btn-alt2:focus, .btn-alt2:active, .btn-alt2.active, .open .dropdown-toggle.btn-alt2, .nav .btn-alt2:hover, .nav .btn-alt2:focus, .nav .btn-alt2:active, .nav .btn-alt2.active {
+	color: #000;
+	background-color: #ccc;
+	border-color: #bbb;
+}
+/*------------------------------------*
+	$BTN_ALT3
+\*------------------------------------*/
+.btn-alt3 {
+	color: #fff;
+	background-color: #888;
+	border-color: #888;
+}
+.btn-alt3:hover, .btn-alt3:focus, .btn-alt3:active, .open .dropdown-toggle.btn-alt3, .nav .btn-alt3:hover, .nav .btn-alt3:focus, .nav .btn-alt3:active {
+	color: #fff;
+	background-color: #999;
+	border-color: #999;
+}
+/*------------------------------------*
+	$BTN_NAV1 and $BTN_NAV2
+\*------------------------------------*/
+.btn-nav1, .btn-nav2 {
+	color: #000;
+	background-color: transparent;
+	border-color: transparent #ddd transparent transparent;
+}
+.btn-nav1:hover, .btn-nav1:focus, .btn-nav1:active, .btn-nav1.active, .open .dropdown-toggle.btn-nav1, .btn-nav2:hover, .btn-nav2:focus, .btn-nav2:active, .btn-nav2.active, .open .dropdown-toggle.btn-nav2 {
+	color: #000;
+	background-color: #ddd;
+	border-color: #ddd;
+}
+/*------------------------------------*
+	$HOME_MISC
+\*------------------------------------*/
+
+/* cert preowned */
+.certifiedPreOwned { background: url(images/certifiedPreOwnedVeh.png) no-repeat right bottom; }
+/*------------------------------------*
+	$HOME_QUICK-NAV
+\*------------------------------------*/
+
+.quickNav3Pic > div:hover { opacity: 0.9; }
+
+/*------------------------------------*
+	$HOME_INVENTORY SEARCH BUTTONS
+\*------------------------------------*/
+
+
+@media (max-width:767px) {
+.mobileSearchNewBlock, .mobileSearchUsedBlock, .mobileViewSpecialsBlock {
+	position: relative;
+	border-top: 2px solid #fff;
+}
+.searchNewBlockM .btn, .searchUsedBlockM .btn, .specialsBlockM .btn { font-size: 20px; }
+.searchNewBlockM, .searchUsedBlockM, .specialsBlockM {
+	position: absolute;
+	top: 25%;
+	left: 5%;
+}
+}
+/*------------------------------------*
+	$WIDGET_INVENTORY SEARCH
+\*------------------------------------*/
+.bannerWrapper.bannerLayout02 #block1 {
+	padding-left: 0;
+	padding-right: 0;
+	background: rgba(255,255,255,1);
+	padding-bottom: 20px;
+	-moz-box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.bannerWrapper.bannerLayout02 #inventorySearchWidget #isTitleSection {
+	background: #ff7b1a;
+	border: 1px solid transparent;
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding: 10px 0 10px 25px;
+}
+.bannerWrapper.bannerLayout02 #inventorySearchWidget .isTitle {
+	font-weight: normal !important;
+	font-size: 22px;
+	color: #fff;
+}
+.bannerWrapper.bannerLayout02 #frmisSubmitButton { margin-top: 10px; }
+.bannerWrapper.bannerLayout02 #isVehicleTypeSection, .bannerWrapper.bannerLayout02 #isVehicleInfo, .bannerWrapper.bannerLayout02 #frmisSubmitButton { padding: 0 20px; }
+
+@media (min-width:1200px) {
+.bannerWrapper.bannerLayout02 #inventorySearchWidget .input-group-sm .form-control { height: 32px !important; }
+}
+/*------------------------------------*
+	$WIDGET_BANNER
+\*------------------------------------*/
+
+
+/*------------------------------------*
+	$WIDGET_MODELBAR
+\*------------------------------------*/
+.modelBar.panel {
+	border: none;
+	padding: 0 1em;
+	margin: 0;
+	background: none;
+}
+.ttMpg, .ttYear, .ttMake { display: none; }
+#modelBarWidget .vehicle, .mbCustomBtn { cursor: pointer; }
+.modelBar .mbPopUpTitle { margin: 4px 0 8px; }
+.modelBar .ptMpg {
+	position: absolute;
+	bottom: -10px;
+	right: 0px;
+	font-weight: bold;
+	background-color: #eee;
+	padding: 6px 8px 2px;
+	border-radius: 4px 0 4px 0;
+}
+.modelBar .ptMpgLabel { font-size: 11px; }
+.modelBar .popoverTitle .btn {
+	margin: 0 0 8px;
+	text-align: center;
+}
+.modelBar .popoverTitle .col-sm-6 {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.modelBar .popoverTitle.row { padding: 0 10px; }
+/* MPG Fix */
+.modelBar .col-model-thumb {
+	position: relative;
+	margin: -5px 0;
+}
+.modelBar .ttMpg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.mbThumbTitle {
+	margin-top: -10px;
+	color: #333;
+}
+
+@media(max-width:992px) {
+.modelBar.panel {
+	border: none;
+	padding: 0 1em;
+}
+}
+
+/*------------------------------------*
+	$FIXED_HEADER
+	jQuery('.headerWrapper').addClass('fixedHeaderArea');
+
+	-add a padding-top to content div based on height of header section (may need multiple media queries)
+\*------------------------------------*/
+@media(min-width:992px) {
+.fixedHeaderArea { background: #fff; }
+.fixedHeaderArea ~ #content { padding-top: 123px; }
+}
+/*------------------------------------*
+	$SRP/VDP
+\*------------------------------------*/

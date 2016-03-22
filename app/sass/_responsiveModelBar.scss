@@ -1,0 +1,54 @@
+/* Model Bar CSS */
+
+.ttMpg, .ttYear, .ttMake { display:none; }
+
+#modelBarWidget .vehicle, .mbCustomBtn { cursor:pointer; }
+
+#modelBarWidget .img-responsive { margin: 0 auto; }
+
+.mbPopUpTitle { margin:4px 0 8px; }
+
+.ttModel {
+	display: block;
+	height: 32px;
+	line-height: 1.2em;
+}
+
+.ptMpg {
+	position: absolute;
+	bottom: -10px;
+	right: 0px;
+	font-weight: bold;
+	background-color: #eee;
+	padding: 6px 8px 2px;
+	border-radius: 4px 0 4px 0;
+}
+
+.ptMpgLabel { font-size:11px; }
+
+.popoverTitle .btn {
+	margin: 0 0 8px;
+	text-align:center;
+}
+
+.popoverTitle .col-sm-6 {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.popoverTitle.row { padding: 0 10px; }
+
+.popoverTag {
+	font-size:10px; 
+	width:80%;
+}
+
+/* MPG Fix */ 
+.col-model-thumb{ position:relative; }
+
+.ttMpg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

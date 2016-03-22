@@ -1,0 +1,27 @@
+.desktop .tel3, .desktop .tel4, .desktop .dealerName, .mobile .dealerName { display: none; }
+.desktop .tel li label { margin-bottom: 0; }
+.dealerName h2 { }
+.socialMedia .fa { font-size: 1.6em; }
+.desktop .dealerLogo img { height: 55px; }
+/* mobile */
+.mobile .dealerLogo { }
+
+@media (max-width:991px) {
+.desktop .dealerLogo img { height: 40px; }
+.desktop .manuLogo img { width: 80px; }
+}
+
+@media (max-width:767px) {
+.mobile .manuLogo img {
+	height: 45px;
+	margin-right: 10px;
+}
+.mobile .dealerLogo img {
+	height: 30px;
+	margin-top: 8px;
+}
+}
+
+@media (max-width:370px) {
+.mobile .manuLogo { display: none; }
+}

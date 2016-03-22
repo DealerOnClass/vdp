@@ -1,0 +1,7 @@
+/* Turns of dots */
+a:focus {
+    outline: 0 none !important;
+    outline-offset: 0 !important;
+}
+
+.modelBar .popover.top.in { z-index: 1050; } /* fix for pop over on model bar */

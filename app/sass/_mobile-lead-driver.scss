@@ -1,0 +1,18 @@
+#offerContainer{
+	display: none;
+}
+
+.offerBlock {
+  overflow: hidden;
+  position: relative;
+}
+
+#offerDropdown.collapse:before {
+    color: #00386c;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 300px;
+    left: 34%;
+    bottom: -10%;
+    position: absolute;
+}

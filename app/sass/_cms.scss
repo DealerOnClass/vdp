@@ -1,0 +1,41 @@
+/* Header */
+.desktop .manuLogo, .desktop .headerBtns { display: none; }
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1199px)  {
+    .navbar-default .navbar-nav li a { padding-left: 14px; padding-right: 14px; }
+}
+.overallRatingSection {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.reviewsSection .fa { color: #fabe28;}
+.reviewItemMiddle {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+/* Content Sections */
+.contentSection5 { background-color:#f3f3f3; background-image: url("http://cdn.dlron.us/assets/styles/599/images/mtsFaded.jpg"); }
+
+/* Media Queries */
+@media (min-width: 1200px) {
+#block1 { margin: 2em 0 0 0; }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+.bannerWrapper.bannerLayout02 #inventorySearchWidget .isTitle {font-size:18px;}
+#block1 { margin: .9em 0 0 0; }
+}
+@media (min-width: 768px) {
+#block2 .qn01 { background-image: url('http://cdn.dlron.us/assets/styles/599/images/qnChev03.jpg'); padding-top: 41%; }
+#block2 .qn02 { background-image: url('http://cdn.dlron.us/assets/styles/599/images/qnChev02.jpg'); padding-top: 41%; }
+#block2 .qn03 { background-image: url('http://cdn.dlron.us/assets/styles/599/images/qnChev01.jpg'); padding-top: 41%; }
+.contentSection2 {padding:3em 0;}
+#block5 .pureCars { background-image: url('http://cdn.dlron.us/assets/socialIcons/purecars_200.png'); padding-top: 38%; }
+#block7 .chevyTruck { background-image: url('http://sp.dlron.us/am/r/640/photo/pixt640/sscusa/chevrolet/silverado 1500/2015/2pu/angularfront.png'); padding-top: 75%; }
+}
+@media (max-width: 767px) {
+#block2 .mobileSearchNewBlock { background-image: url('http://cdn.dlron.us/assets/styles/599/images/mobileSearch01.jpg'); padding-top: 36%; }
+#block2 .mobileSearchUsedBlock { background-image: url('http://cdn.dlron.us/assets/styles/599/images/mobileSearch02.jpg'); padding-top: 36%; }
+#block2 .mobileViewSpecialsBlock { background-image: url('http://cdn.dlron.us/assets/styles/599/images/mobileSpecials01.jpg'); padding-top: 36%; }
+.contentSection5 { background-image: none; }
+}
