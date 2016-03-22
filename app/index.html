@@ -7,6 +7,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            .vdp-detail-section {
+                border-top: 2px solid black;
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+            }
+            .vdp-detail-section_text {
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        </style>
     </head>
     <body>
         <div class="headerWrapper full fixedHeaderArea">
@@ -341,19 +351,148 @@
                                     <img class="img-responsive" src="http://placehold.it/720x480" alt="Image Alt Text">
                                 </div>
 
+                                <div class="margin-vert_5x clearfix">
+                                    <ul class="list-inline list-pad-left-x list-pad-right-2x pull-left">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-play-circle"></i>
+                                                <span class="margin-left_5x">Video</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-repeat"></i>
+                                                <span class="margin-left_5x">360 Exterior</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-repeat"></i>
+                                                <span class="margin-left_5x">360 Interior</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-eyedropper"></i>
+                                                <span class="margin-left_5x">Colors</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-inline list-pad-right-x list-pad-left-1x pull-right">
+                                        <li><a class="text-muted" href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="text-muted" href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="text-muted" href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a class="text-muted" href=""><i class="fa fa-envelope"></i></a></li>
+                                        <li><a class="text-muted" href=""><i class="fa fa-print"></i></a></li>
+                                        <li><a class="text-muted" href=""><i class="fa fa-mobile"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="clearfix margin-top-3x">
+                                    <a class="clearfix panel-heading btn btn-block vdp-detail-section" data-toggle="collapse" href="#js-vdp-vehicle-details">
+                                        <span class="vdp-detail-section_text pull-left">vehicle details</span>
+                                        <i class="pull-right fa fa-minus"></i>
+                                    </a>
+                                    <div id="#js-vdp-vehicle-details" class="panel-content">
+
+                                        <div class="row margin-vert-2x">
+                                            <div class="col-sm-6">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <i class="margin-right_5x fa-3x fa fa-circle" style="color: firebrick;"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="margin-x">Exterior</h5>
+                                                        <h3 class="margin-x"><strong>Deep Ruby Metallic</strong></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                 <div class="media">
+                                                    <div class="media-left">
+                                                        <i class="margin-right_5x fa-3x fa fa-circle" style="color: grey;"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="margin-x">Interior</h5>
+                                                        <h3 class="margin-x"><strong>Dark Ash with Jet Black Interior Accents</strong></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row margin-bottom-2x">
+                                            <div class="col-sm-8">
+                                                <hr class="margin-vert_5x">
+                                                <div class="row">
+                                                    <span class="col-sm-3">Body Style:</span>
+                                                    <span class="col-sm-9"><strong>Pickup Regular Cab</strong></span>
+                                                </div>
+                                                <hr class="margin-vert_5x">
+                                                <div class="row">
+                                                    <span class="col-sm-3">Engine:</span>
+                                                    <span class="col-sm-9"><strong>8 Cyl - 6.7 L</strong></span>
+                                                </div>
+                                                <hr class="margin-vert_5x">
+                                                <div class="row">
+                                                    <span class="col-sm-3">Drive Type:</span>
+                                                    <span class="col-sm-9"><strong>RWD</strong></span>
+                                                </div>
+                                                <hr class="margin-vert_5x">
+                                                <div class="row">
+                                                    <span class="col-sm-3">Transmission:</span>
+                                                    <span class="col-sm-9"><strong>Automatic</strong></span>
+                                                </div>
+                                                <hr class="margin-vert_5x">
+                                            </div>
+
+                                            <div class="col-sm-4">
+
+                                                <div class="clearfix margin-bottom-1x">
+                                                    <div class="pull-left">
+                                                        <ul class="list-inline vert-middle text-center">
+                                                            <li>City<br><span class="h3"><strong>30</strong></span></li>
+                                                            <li><i class="text-muted fa fa-3x fa-bomb"></i></li>
+                                                            <li>Hwy<br><span class="h3"><strong>20</strong></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <small><strong>Model Code:</strong> W4B</small>
+                                                    </li>
+                                                    <li>
+                                                        <small><strong>VIN #:</strong> WDDHF8JB5DA701381</small>
+                                                    </li>
+                                                    <li>
+                                                        <small><strong>Stock #:</strong> W4173</small>
+                                                    </li>
+                                                </ul>
+
+                                                <a href="">
+                                                    <i class="margin-right_5x fa fa-file-text-o"></i>
+                                                    View Window Sticker
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div class="col-sm-offset-1 col-sm-4">
 
-                                <div class="well">
+                                <div class="well pad-1x margin-bottom_5x">
                                     <div class="media">
                                         <div class="media-left">
-                                            <i class="margin-right_5x text-main fa fa-lg fa-arrow-circle-down"></i>
+                                            <i class="margin-right_5x text-main fa fa-2x fa-arrow-circle-down"></i>
                                         </div>
                                         <div class="media-body">
                                             <div class="clearfix">
                                                 <div class="pull-right">
-                                                    <a class="btn btn-main" href="">Get Price Alerts</a>
+                                                    <a class="btn btn-main btn-sm" href="">Get Price Alerts</a>
                                                 </div>
                                                 <div>
                                                     <h4 class="margin-x"><strong>Recent Price Drop</strong></h4>
@@ -363,9 +502,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
 
                                 <ul class="list-unstyled list-pad-bottom_5x">
                                     <li>
@@ -419,7 +555,7 @@
                                     <small><strong>Please Note:</strong> We proved Savings on our vehicles daily based on current inventory supply. Check to see if this vehicle qualifies for a Sale Price.</small>
                                 </div>
 
-                                <div class="margin-vert-1x clearfix">
+                                <div class="clearfix margin-vert-1x">
                                     <a class="btn btn-cta btn-block btn-lg" href="">
                                         Request Sale Price
                                     </a>
@@ -429,6 +565,43 @@
                                     <small>* Please contact dealer to verify price, options, and other vehicle details.</small>
                                     <br>
                                     <a href="">View Disclaimer</a>
+                                </div>
+
+                                <div class="clearfix">
+                                    <ul class="list-inline list-pad-left-x list-pad-right_5x margin-vert-1x">
+                                        <li>
+                                            <img class="img-responsive img-circle" src="http://placehold.it/50x50" alt="Placeholder for VDP Logo">
+                                        </li>
+                                        <li class="pull-left">
+                                            <img class="img-responsive img-circle" src="http://placehold.it/50x50" alt="Placeholder for VDP Logo">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="well pad-1x margin-bottom_5x">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <i class="margin-right_5x text-main fa fa-tags"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="margin-x"><strong>Special low 0% APR</strong></h5>
+                                            <small class="margin-x">Show Incentive Details</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="well pad-1x margin-bottom_5x">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <i class="margin-right_5x text-main fa fa-tags"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="margin-x"><strong>Special Offer Qualifier</strong></h5>
+                                            <small class="margin-x">2014 Chevrolet Silverado - $179 a month lease</small>
+                                            <br>
+                                            <a href="">Get This Special</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
