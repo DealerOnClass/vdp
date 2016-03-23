@@ -30,6 +30,15 @@ gulp.task('fonts', function() {
         }));
 });
 
+//  Js
+gulp.task('js', function() {
+    gulp.src('./app/js/*.js')
+        .pipe(gulp.dest('./dist/js/'))
+        .pipe(reload({
+            stream: true
+        }));
+});
+
 //  SASS
 gulp.task('sass', function() {
     gulp.src('./app/sass/**/*.scss')
@@ -47,7 +56,7 @@ gulp.task('sass', function() {
 });
 
 //  Serve
-gulp.task('serve', ['sass','html','fonts'], function() {
+gulp.task('serve', ['sass','js','html','fonts'], function() {
     browserSync.init({
         server: "./dist",
         notify: false
@@ -58,6 +67,7 @@ gulp.task('serve', ['sass','html','fonts'], function() {
 gulp.task('watch', ['serve'], function() {
     gulp.watch('./app/*.html', ['html']);
     gulp.watch('./app/sass/**/*.scss', ['sass']);
+    gulp.watch('./app/js/*.js', ['js']);
     gulp.watch('./app/fonts/**/*.*', ['fonts']);
 });
 
