@@ -395,7 +395,7 @@
                                     </a>
                                 </div>
 
-                                <div class="clearfix vdp-image-section">
+                                <div id="js-vdp-carousel"  class="clearfix vdp-image-section">
                                     <div class="vdp-image-section-carousel">
                                         <img class="img-responsive" src="http://placehold.it/720x480" alt="Image Alt Text">
                                     </div>
@@ -930,7 +930,7 @@
 
                             </div>
 
-                            <div class="col-md-offset-1 col-md-4 col-sm-4">
+                            <div id="js-vdp-sidebar" class="col-md-offset-1 col-md-4 col-sm-4">
 
                                 <div class="well pad-1x margin-bottom_5x">
                                     <div class="media">
@@ -1241,12 +1241,18 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script>
+            //
+            //  VDP Section Collapse Icon Toggle
             $('.js-vdp-detail-section-collapse').on('show.bs.collapse', function() {
                 $(this).prev('.js-vdp-detail-section').children('.js-vdp-detail-section-icon').removeClass("fa-plus").addClass("fa-minus");
             });
             $('.js-vdp-detail-section-collapse').on('hide.bs.collapse', function() {
                 $(this).prev('.js-vdp-detail-section').children('.js-vdp-detail-section-icon').removeClass("fa-minus").addClass("fa-plus");
             });
+            //
+            //  VDP Sidebar Reorder
+            //  var vdp_sidebar  = document.querySelector("#js-vdp-sidebar");
+            //  var vdp_carousel = document.querySelector("#js-vdp-carousel");
         </script>
     </body>
 </html>
