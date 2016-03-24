@@ -395,9 +395,11 @@
                                     </a>
                                 </div>
 
-                                <div id="js-vdp-carousel"  class="clearfix vdp-image-section">
+                                <div id="js-vdp-carousel"  class="clearfix vdp-image-section js-gallery">
                                     <div class="vdp-image-section-carousel">
-                                        <img class="img-responsive" src="http://placehold.it/720x480" alt="Image Alt Text">
+                                        <a href="images/pizza.jpg">
+                                            <img class="img-responsive" src="images/pizza.jpg" alt="Image Alt Text">
+                                        </a>
                                     </div>
                                     <div class="vdp-image-section-thumbnail_carousel">
                                         <div class="vdp-image-section-thumbnail text-center">
@@ -1240,6 +1242,7 @@
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/baguetteBox.js"></script>
         <script>
             //
             //  VDP Section Collapse Icon Toggle
@@ -1253,6 +1256,14 @@
             //  VDP Sidebar Reorder
             //  var vdp_sidebar  = document.querySelector("#js-vdp-sidebar");
             //  var vdp_carousel = document.querySelector("#js-vdp-carousel");
+            //
+            //
+            //  Baguette Box
+            window.onload = function() {
+                ;(function() {
+                    baguetteBox.run('.js-gallery');
+                })();
+            };
         </script>
     </body>
 </html>
