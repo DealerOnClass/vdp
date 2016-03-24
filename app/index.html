@@ -27,17 +27,35 @@
             .vdp-image-section {
                 position: relative;
             }
-            .vdp-image-section-thumbnail {
-                position: absolute;
-                top: 0;
-                right: -76px;
+            @media (min-width: 992px) {
+                .vdp-image-section-thumbnail {
+                    position: absolute;
+                    top: 0;
+                    right: -76px;
+                }
+            }
+            @media (max-width: 991px) {
+                .vdp-image-section-thumbnail_carousel {
+                    overflow: auto;
+                }
+                .vdp-image-section-thumbnail {
+                    width: 200%;
+                }
+                .vdp-image-section-thumbnail-image {
+                    float: left;
+                }
+                .vdp-image-section-thumbnail-icon {
+                    float: left;
+                }
             }
             .vdp-image-section-thumbnail-image {
                 box-sizing: border-box;
                 border: 3px solid transparent;
             }
-            .vdp-image-section-thumbnail-image + .vdp-image-section-thumbnail-image {
-                margin-top: -3px;
+            @media (min-width: 992px) {
+                .vdp-image-section-thumbnail-image + .vdp-image-section-thumbnail-image {
+                    margin-top: -3px;
+                }
             }
             .vdp-image-section-thumbnail-image:hover,
             .vdp-image-section-thumbnail-image:active {
@@ -354,7 +372,7 @@
 
                         <div class="row">
 
-                            <div class="col-sm-7">
+                            <div class="col-md-7 col-sm-8">
 
                                 <div class="clearfix">
                                     <ul class="list-inline list-pad-left-x list-pad-right-2x pull-left">
@@ -381,20 +399,24 @@
                                     <div class="vdp-image-section-carousel">
                                         <img class="img-responsive" src="http://placehold.it/720x480" alt="Image Alt Text">
                                     </div>
-                                    <div class="vdp-image-section-thumbnail text-center">
-                                        <a href="">
-                                            <i class="text-muted fa fa-2x fa-caret-up"></i>
-                                        </a>
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
-                                        <a href="">
-                                            <i class="text-muted fa fa-2x fa-caret-down"></i>
-                                        </a>
+                                    <div class="vdp-image-section-thumbnail_carousel">
+                                        <div class="vdp-image-section-thumbnail text-center">
+                                            <a class="vdp-image-section-thumbnail-icon" href="">
+                                                <i class="text-muted fa fa-2x fa-caret-up hidden-sm hidden-xs"></i>
+                                                <!--<i class="text-muted fa fa-2x fa-caret-left margin-top_5x visible-sm visible-xs"></i>-->
+                                            </a>
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <img class="vdp-image-section-thumbnail-image img-responsive" src="http://placehold.it/70x50" alt="Image Alt Text">
+                                            <a class="vdp-image-section-thumbnail-icon" href="">
+                                                <i class="text-muted fa fa-2x fa-caret-down hidden-sm hidden-xs"></i>
+                                                <!--<i class="text-muted fa fa-2x fa-caret-right margin-top_5x visible-sm visible-xs"></i>-->
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -444,8 +466,8 @@
                                     <div id="js-vdp-vehicle-details" class="panel-content collapse in js-vdp-detail-section-collapse">
                                         <div class="clearfix pad-vert-2x pad-horz-1x">
                                             <div class="row margin-vert-2x">
-                                                <div class="col-sm-6">
-                                                    <div class="media">
+                                                <div class="col-md-6">
+                                                    <div class="media margin-bottom-2x">
                                                         <div class="media-left">
                                                             <i class="margin-right_5x fa-3x fa fa-circle" style="color: firebrick;"></i>
                                                         </div>
@@ -455,7 +477,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-md-6">
                                                     <div class="media">
                                                         <div class="media-left">
                                                             <i class="margin-right_5x fa-3x fa fa-circle" style="color: grey;"></i>
@@ -468,31 +490,31 @@
                                                 </div>
                                             </div>
                                             <div class="row margin-bottom-2x">
-                                                <div class="col-sm-8">
+                                                <div class="col-md-8">
                                                     <hr class="margin-vert-1x">
                                                     <div class="row">
-                                                        <span class="col-sm-3">Body Style:</span>
-                                                        <span class="col-sm-9"><span class="h4"><strong>Pickup Regular Cab</strong></span></span>
+                                                        <span class="col-sm-4">Body Style:</span>
+                                                        <span class="col-sm-8"><span class="h4"><strong>Pickup Regular Cab</strong></span></span>
                                                     </div>
                                                     <hr class="margin-vert-1x">
                                                     <div class="row">
-                                                        <span class="col-sm-3">Engine:</span>
-                                                        <span class="col-sm-9"><span class="h4"><strong>8 Cyl - 6.7 L</strong></span></span>
+                                                        <span class="col-sm-4">Engine:</span>
+                                                        <span class="col-sm-8"><span class="h4"><strong>8 Cyl - 6.7 L</strong></span></span>
                                                     </div>
                                                     <hr class="margin-vert-1x">
                                                     <div class="row">
-                                                        <span class="col-sm-3">Drive Type:</span>
-                                                        <span class="col-sm-9"><span class="h4"><strong>RWD</strong></span></span>
+                                                        <span class="col-sm-4">Drive Type:</span>
+                                                        <span class="col-sm-8"><span class="h4"><strong>RWD</strong></span></span>
                                                     </div>
                                                     <hr class="margin-vert-1x">
                                                     <div class="row">
-                                                        <span class="col-sm-3">Transmission:</span>
-                                                        <span class="col-sm-9"><span class="h4"><strong>Automatic</strong></span></span>
+                                                        <span class="col-sm-4">Transmission:</span>
+                                                        <span class="col-sm-8"><span class="h4"><strong>Automatic</strong></span></span>
                                                     </div>
                                                     <hr class="margin-vert-1x">
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="clearfix margin-top-1x margin-bottom-2x">
+                                                <div class="col-md-4">
+                                                    <div class="clearfix margin-vert-2x">
                                                         <div class="pull-left">
                                                             <ul class="list-inline vert-middle text-center">
                                                                 <li>City<br><span class="h3"><strong>30</strong></span></li>
@@ -678,7 +700,7 @@
                                     <div id="js-vdp-also-viewed" class="panel-content collapse in js-vdp-detail-section-collapse">
                                         <div class="clearfix pad-vert-2x pad-horz-1x">
                                             <div class="row">
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -713,7 +735,7 @@
                                                     </ul>
                                                     <a href=""><small>View Vehicle Details</small></a>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -748,7 +770,7 @@
                                                     </ul>
                                                     <a href=""><small>View Vehicle Details</small></a>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -794,7 +816,7 @@
                                     <div id="js-vdp-recently-viewed" class="panel-content collapse in js-vdp-detail-section-collapse">
                                         <div class="clearfix pad-vert-2x pad-horz-1x">
                                             <div class="row">
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -829,7 +851,7 @@
                                                     </ul>
                                                     <a href=""><small>View Vehicle Details</small></a>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -864,7 +886,7 @@
                                                     </ul>
                                                     <a href=""><small>View Vehicle Details</small></a>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6">
                                                     <img class="img-responsive" src="http://placehold.it/300x200" alt="Vehicle Also Viewed Placeholder">
                                                     <h5>
                                                         <strong>2016 Chevrolet Silverado 2500HD Work Truck</strong>
@@ -908,7 +930,7 @@
 
                             </div>
 
-                            <div class="col-sm-offset-1 col-sm-4">
+                            <div class="col-md-offset-1 col-md-4 col-sm-4">
 
                                 <div class="well pad-1x margin-bottom_5x">
                                     <div class="media">
