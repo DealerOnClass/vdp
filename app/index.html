@@ -22,57 +22,33 @@
                 border-top: 1px solid rgba(0,0,0,0.25);
             }
             /*
-             *  Vehicle Details Page Image
-             */
-            .vdp-image-section {
-                position: relative;
-            }
-            @media (min-width: 992px) {
-                .vdp-image-section-thumbnail {
-                    position: absolute;
-                    top: 0;
-                    right: -76px;
-                    width: 76px;
-                }
-            }
-            @media (max-width: 991px) {
-                .vdp-image-section-thumbnail_carousel {
-                    overflow: auto;
-                }
-                .vdp-image-section-thumbnail {
-                    width: 200%;
-                }
-                .vdp-image-section-thumbnail-image {
-                    float: left;
-                }
-                .vdp-image-section-thumbnail-icon {
-                    float: left;
-                }
-            }
-            .vdp-image-section-thumbnail-image img {
-                box-sizing: border-box;
-                border: 3px solid transparent;
-            }
-            @media (min-width: 992px) {
-                .vdp-image-section-thumbnail-image + .vdp-image-section-thumbnail-image {
-                    margin-top: -3px;
-                }
-            }
-            .vdp-image-section-thumbnail-image:hover img,
-            .vdp-image-section-thumbnail-image:active img {
-                cursor: pointer;
-                border-color: #aaa;
-            }
-            /*
              *  Carousel Thumbnail Gallery
              */
             #carousel-custom .carousel-indicators {
                 margin: 10px 0 0;
                 overflow: auto;
-                position: static;
                 text-align: left;
-                white-space: nowrap;
                 width: 100%;
+            }
+            @media (min-width: 992px) {
+                #carousel-custom .carousel-indicators {
+                    position: absolute;
+                    top: 0;
+                    left: auto;
+                    right: -80px;
+                    width: 80px;
+                    margin: 0;
+                    height: 100%;
+                }
+                #carousel-custom .carousel-indicators li img {
+                    width: 100%;
+                }
+            }
+            @media (max-width: 991px) {
+                #carousel-custom .carousel-indicators {
+                    position: static;
+                    white-space: nowrap;
+                }
             }
             #carousel-custom .carousel-indicators li {
                 background-color: transparent;
