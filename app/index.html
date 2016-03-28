@@ -24,14 +24,13 @@
             /*
              *  Carousel Thumbnail Gallery
              */
-            #carousel-custom .carousel-indicators {
-                margin: 10px 0 0;
-                overflow: auto;
+            #vdp-carousel .carousel-indicators {
+                overflow: hidden;
                 text-align: left;
                 width: 100%;
             }
             @media (min-width: 992px) {
-                #carousel-custom .carousel-indicators {
+                #vdp-carousel .carousel-indicators-wrapper {
                     position: absolute;
                     top: 0;
                     left: auto;
@@ -39,37 +38,64 @@
                     width: 80px;
                     margin: 0;
                     height: 100%;
+                    /* overflow-y: scroll; */
                 }
-                #carousel-custom .carousel-indicators li img {
+                #vdp-carousel .carousel-indicators {
+                    position: static;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                }
+                #vdp-carousel .carousel-indicators li {
+                    border: 0 none;
+                    display: block;
+                }
+                #vdp-carousel .carousel-indicators li img {
                     width: 100%;
                 }
             }
             @media (max-width: 991px) {
-                #carousel-custom .carousel-indicators {
-                    position: static;
+                #vdp-carousel .carousel-control,
+                #vdp-carousel .carousel-indicators {
+                    display: none;
+                }
+                #vdp-carousel .carousel-inner {
                     white-space: nowrap;
+                    overflow-x: auto;
+                }
+                #vdp-carousel .carousel-inner .item {
+                    display: inline-block;
+                    width: 75%;
+                    margin-right: 1em;
                 }
             }
-            #carousel-custom .carousel-indicators li {
+            #vdp-carousel .carousel-indicators li {
                 background-color: transparent;
-                -webkit-border-radius: 0;
                 border-radius: 0;
-                display: inline-block;
+                border: 2px solid transparent;
                 height: auto;
-                margin: 0 !important;
                 width: auto;
+                margin: 2px;
             }
-            #carousel-custom .carousel-indicators li img {
+            #vdp-carousel .carousel-indicators li + li {
+                margin-top: -2px;
+            }
+            #vdp-carousel .carousel-indicators li img {
                 display: block;
-                opacity: 0.5;
             }
-            #carousel-custom .carousel-indicators li.active img {
-                opacity: 1;
+            #vdp-carousel .carousel-indicators li {
+                border-color: transparent;
+                z-index: 50;
+                position: relative;
             }
-            #carousel-custom .carousel-indicators li:hover img {
+            #vdp-carousel .carousel-indicators li.active {
+                border-color: #aaa;
+                z-index: 100;
+            }
+            #vdp-carousel .carousel-indicators li:hover {
                 opacity: 0.75;
             }
-            #carousel-custom .carousel-outer {
+            #vdp-carousel .carousel-outer {
                 position: relative;
             }
         </style>
@@ -406,12 +432,7 @@
                                 </div>
 
                                 <div id="js-vdp-carousel"  class="clearfix vdp-image-section js-gallery">
-                                    <!--<div class="vdp-image-section-carousel hidden-sm hidden-xs">-->
-                                        <!--<a href="images/pizza.jpg">-->
-                                            <!--<img class="img-responsive" src="images/pizza.jpg" alt="Image Alt Text">-->
-                                        <!--</a>-->
-                                    <!--</div>-->
-                                    <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+                                    <div id='vdp-carousel' class='carousel slide' data-interval='false'>
                                         <div class='carousel-outer'>
                                             <!-- Wrapper for slides -->
                                             <div class='carousel-inner'>
@@ -461,49 +482,85 @@
                                                         <img src='images/pizza.jpg' alt='' />
                                                     </a>
                                                 </div>
+                                                <div class='item'>
+                                                    <a href='images/pizza.jpg'>
+                                                        <img src='images/pizza.jpg' alt='' />
+                                                    </a>
+                                                </div>
+                                                <div class='item'>
+                                                    <a href='images/pizza.jpg'>
+                                                        <img src='images/pizza.jpg' alt='' />
+                                                    </a>
+                                                </div>
+                                                <div class='item'>
+                                                    <a href='images/pizza.jpg'>
+                                                        <img src='images/pizza.jpg' alt='' />
+                                                    </a>
+                                                </div>
                                             </div>
 
                                             <!-- Controls -->
-                                            <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
-                                                <span class='fa fa-chevron-left'>
-                                                </span>
+                                            <a class='left carousel-control' href='#vdp-carousel' data-slide='prev'>
+                                                <span class='fa fa-chevron-left'></span>
                                             </a>
-                                            <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
-                                                <span class='fa fa-chevron-right'>
-                                                </span>
+                                            <a class='right carousel-control' href='#vdp-carousel' data-slide='next'>
+                                                <span class='fa fa-chevron-right'></span>
                                             </a>
                                         </div>
 
                                         <!-- Indicators -->
-                                        <ol class='carousel-indicators mCustomScrollbar'>
-                                            <li data-target='#carousel-custom' data-slide-to='0' class='active'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='1'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='2'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='3'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='4'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='5'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='6'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='7'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                            <li data-target='#carousel-custom' data-slide-to='8'>
-                                                <img src='images/pizza--small.jpg' alt='' />
-                                            </li>
-                                        </ol>
+                                        <div class="carousel-indicators-wrapper">
+                                            <ul class="bxslider">
+                                                <li>
+                                                    <ol class='carousel-indicators mCustomScrollbar'>
+                                                        <li data-target='#vdp-carousel' data-slide-to='0' class='active'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='1'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='2'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='3'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='4'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <ol class='carousel-indicators mCustomScrollbar'>
+                                                        <li data-target='#vdp-carousel' data-slide-to='5'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='6'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='7'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='8'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='9'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <ol class='carousel-indicators mCustomScrollbar'>
+                                                        <li data-target='#vdp-carousel' data-slide-to='10'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                        <li data-target='#vdp-carousel' data-slide-to='11'>
+                                                            <img src='images/pizza--small.jpg' alt='' />
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -1019,19 +1076,19 @@
 
                             <div id="js-vdp-sidebar" class="col-md-offset-1 col-md-4 col-sm-4">
 
-                                <div class="well pad-1x margin-bottom_5x">
+                                <div class="well pad-1x pad-bottom-x margin-bottom_5x">
                                     <div class="media">
                                         <div class="media-left">
                                             <i class="margin-right_5x text-main fa fa-2x fa-arrow-circle-down"></i>
                                         </div>
                                         <div class="media-body">
                                             <div class="clearfix">
-                                                <div class="pull-right">
-                                                    <a class="btn btn-main btn-sm" href="">Get Price Alerts</a>
-                                                </div>
-                                                <div>
+                                                <div class="col-lg-7 pad-x margin-bottom-1x">
                                                     <h4 class="margin-x"><strong>Recent Price Drop</strong></h4>
                                                     <small class="margin-x">Reduced $2000 since 03/14/16p</small>
+                                                </div>
+                                                <div class="col-lg-5 pad-x margin-bottom-1x text-right-lg">
+                                                    <a class="btn btn-main btn-sm" href="">Get Price Alerts</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1328,6 +1385,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/baguetteBox.js"></script>
+        <script src="js/bxslider.js"></script>
         <script>
             //
             //  VDP Section Collapse Icon Toggle
@@ -1349,6 +1407,17 @@
                     baguetteBox.run('.js-gallery');
                 })();
             };
+            //
+            //  Carousel Controls
+            $('#vdp-carousel').carousel('pause');
+            //
+            //  Box Slider
+            $('.bxslider').bxSlider({
+                mode: 'vertical',
+                pager: false,
+                nextText: '',
+                prevText: ''
+            });
         </script>
     </body>
 </html>
