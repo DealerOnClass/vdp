@@ -1,0 +1,134 @@
+/*
+ *  Vehicle Details Page Sections ex:'warranty, options, etc.'
+ */
+a {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.vdp-detail-section {
+    border-top: 2px solid #000;
+}
+
+.vdp-detail-section-text {
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.js-vdp-detail-section-collapse {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/*
+ *  Carousel General
+ */
+.vdp-carousel .item img {
+    width: 100%;
+}
+
+/*
+ *  Carousel Thumbnail Gallery
+ */
+.vdp-carousel .carousel-indicators {
+    overflow: hidden;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    .vdp-carousel .carousel-indicators-wrapper {
+        position: absolute;
+        top: 0;
+        right: -86px;
+        left: auto;
+
+        width: 80px;
+        height: 100%;
+        margin: 0;
+        /* overflow-y: scroll; */
+    }
+
+    .vdp-carousel .carousel-indicators {
+        position: static;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+    .vdp-carousel .carousel-indicators li {
+        display: block;
+
+        border: 0 none;
+    }
+
+    .vdp-carousel .carousel-indicators img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .vdp-carousel .carousel-control,
+    .vdp-carousel .carousel-indicators {
+        display: none;
+    }
+
+    .vdp-carousel .carousel-inner {
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+    .vdp-carousel .carousel-inner .item {
+        display: inline-block;
+
+        width: 75%;
+        margin-right: 1em;
+    }
+
+}
+
+.vdp-carousel .carousel-indicators li {
+    width: auto;
+    height: auto;
+    margin: 2px;
+
+    border: 2px solid transparent;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.vdp-carousel .carousel-indicators li + li {
+    margin-top: -2px;
+}
+
+.vdp-carousel .carousel-indicators img {
+    display: block;
+}
+
+.vdp-carousel .carousel-indicators li {
+    position: relative;
+    z-index: 50;
+
+    border-color: transparent;
+}
+
+.vdp-carousel .carousel-indicators .active {
+    z-index: 100;
+
+    border-color: #aaa;
+}
+
+.vdp-carousel .carousel-indicators li:hover {
+    border-color: #aaa;
+}
+
+.vdp-carousel .carousel-outer {
+    position: relative;
+}
+
