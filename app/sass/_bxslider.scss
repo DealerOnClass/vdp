@@ -132,6 +132,15 @@
     }
 }
 
+@media(max-width: 991px) {
+    .bx-wrapper {
+        .bx-prev,
+        .bx-next {
+            display: none;
+        }
+    }
+}
+
 .bx-wrapper .bx-controls-direction a {
     text-decoration: none;
     position: absolute;
