@@ -153,3 +153,9 @@ a {
 .vdp-carousel-wrapper .vdp-carousel-info a {
     color: inherit;
 }
+
+@media (max-width: 991px) {
+    .vdp-btn {
+        font-size: 1.25em;
+    }
+}
