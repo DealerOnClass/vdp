@@ -83,11 +83,12 @@ a {
         white-space: nowrap;
     }
 
+    //  Sizing and spacing of carousel items on mobile
     .vdp-carousel .carousel-inner .item {
         display: inline-block;
 
-        width: 75%;
-        margin-right: 1em;
+        width: 85%;
+        margin-right: 1rem;
     }
 
 }
@@ -129,4 +130,26 @@ a {
 
 .vdp-carousel .carousel-outer {
     position: relative;
+}
+
+.vdp-carousel-wrapper {
+    position: relative;
+}
+
+.vdp-carousel-wrapper .js-vdp-carousel {
+    font-size: 0;
+}
+
+.vdp-carousel-wrapper .vdp-carousel-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.vdp-carousel-wrapper .vdp-carousel-info a {
+    color: inherit;
 }

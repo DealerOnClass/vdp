@@ -1,27 +1,25 @@
 {
-  "name": "asscss",
+  "name": "dealeronvdp",
   "version": "1.0.0",
-  "description": "alberto silva css framework",
+  "description": "dealeron vdp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asilvadesigns/framework.git"
+    "url": "git+https://github.com/dealeronclass/vdp.git"
   },
   "keywords": [
-    "alberto",
-    "silva",
-    "css",
-    "framework"
+    "dealeron",
+    "vdp"
   ],
   "author": "alberto silva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/asilvadesigns/framework/issues"
+    "url": "https://github.com/dealeronclass/vdp/issues"
   },
-  "homepage": "https://github.com/asilvadesigns/framework#readme",
+  "homepage": "https://github.com/dealeronclass/vdp#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
