@@ -113,21 +113,21 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-    top: -2em;
+    top: -2rem;
 
     &:before {
         font-family: "FontAwesome";
-        font-size: 1.5em;
+        font-size: 1.5rem;
         content: "\f0d8";
     }
 }
 
 .bx-wrapper .bx-next {
-    bottom: -2em;
+    bottom: 0.25rem;
 
     &:before {
         font-family: "FontAwesome";
-        font-size: 1.5em;
+        font-size: 1.5rem;
         content: "\f0d7";
     }
 }
